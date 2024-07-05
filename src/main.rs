@@ -22,13 +22,12 @@ export component App inherits Window {
     width: 640px;
     height: 480px;
 
-
     VerticalBox {
         HorizontalBox {
             Rectangle {
                 background: gray;
                 TextInput {
-                    text: "A";
+                    text: "0";
                     edited => {
                         Calcul.a = self.text;
                     }
@@ -37,7 +36,7 @@ export component App inherits Window {
             Rectangle {
                 background: gray;
                 TextInput {
-                    text: "B";
+                    text: "";
                     edited => {
                     Calcul.b = self.text;
                     }
